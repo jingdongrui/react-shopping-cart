@@ -6,13 +6,14 @@ const SpCarDialog: React.FC<{
   onClose?: () => void;
   children?: ReactNode;
 }> = ({ isOpen = false, onOpen, onClose, children }) => {
-  console.log(isOpen);
   if (!isOpen) return null;
+  const currentNode = document.getElementsByClassName("sp-cart-dialog")
+//   const parentCurrnet = currentNode.p
   onOpen && onOpen();
   onClose && onClose();
   return (
     <>
-      <div>
+      <div className="sp-cart-dialog">
         SpCarDialog
         {children}
       </div>

@@ -6,7 +6,7 @@ const SpHeader: React.FC = () => {
   // const [isDialogOpen, setIsDialogOpen] = useState(false);
   const open = (event: React.MouseEvent) => {
     // setIsDialogOpen(!isDialogOpen);
-    console.log(event.target);
+    console.log((event.target as HTMLElement).getBoundingClientRect());
   };
   return (
     <>
