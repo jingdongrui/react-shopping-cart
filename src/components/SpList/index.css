@@ -1,0 +1,7 @@
+.shopping-list {
+  box-sizing: border-box;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

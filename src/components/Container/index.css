@@ -1,0 +1,9 @@
+.content {
+  box-sizing: border-box;
+  width: 83%;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 16px;
+
+  /* display: flex; */
+}
