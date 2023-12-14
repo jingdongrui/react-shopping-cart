@@ -3,7 +3,7 @@ import "./index.css";
 import useCartStore from "../../store/cartStore";
 
 const SpHeader: React.FC = () => {
-  const { cartProducts, totalPrice, removeFromCart } = useCartStore();
+  const { cartProducts, totalPrice, totalNum, removeFromCart } = useCartStore();
   const [showPopup, setShowPopup] = useState(false);
 
   const handleAddToCart = () => {
@@ -33,7 +33,7 @@ const SpHeader: React.FC = () => {
       <h3>购物天堂</h3>
       {/* 购物车按钮 */}
       <div className="shopping-header__cart-button">
-        <button onClick={handleAddToCart}>购物车</button>
+        <button onClick={handleAddToCart}>购物车({totalNum})</button>
 
         {/* 弹窗 */}
         {showPopup && (

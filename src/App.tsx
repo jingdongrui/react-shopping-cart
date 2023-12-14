@@ -14,6 +14,7 @@ const App = () => {
       name: "",
       price: "",
       imgUrl: "",
+      number: 0,
     },
   ]);
   useEffect(() => {
