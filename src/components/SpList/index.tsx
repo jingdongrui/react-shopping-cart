@@ -5,7 +5,6 @@ import { SpListProps } from "../../type";
 
 const SpList: React.FC<SpListProps> = (props) => {
   const propsValue = props;
-  console.log("ssssssssssss", propsValue);
   return (
     <>
       <div className="shopping-list">

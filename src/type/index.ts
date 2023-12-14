@@ -3,6 +3,7 @@ export interface ListItemType {
   name: string;
   price: string;
   imgUrl: string;
+  number: number;
 }
 
 export interface SpListProps {
